@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.main div:first-child {
+  margin: 90px 0 40px 0;
+  font-size: 19px;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: #556;
+}
+
+.sign-out {
+  background: #778;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.sign-in, .auth-btn {
+  width: 100px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: #667;
+}
+
+.auth-btn {
   color: white;
+  color: white;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-btn img {
+  width: 25px;
+  height: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-bubble {
+  background: #bba;
+  border-radius: 29px;
+  margin: 20px;
+  width: fit-content;
+  display: flex;
+  padding: 10px;
+}
+
+.chat-bubble__left {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.chat-bubble__right {
+  margin: 0 20px;
+}
+
+.user-name {
+  background: black;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 15px;
+}
+
+form {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background: #556;
+  padding: 10px;
+}
+
+.form_input__input {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.submin_message {
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #778;
+  width: 118px;
 }
